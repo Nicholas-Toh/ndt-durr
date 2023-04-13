@@ -14,4 +14,10 @@ nvm install 16
 
 nvm use 16
 
+echo $PATH
+
+export PATH=$PATH:$(which node)
+
+echo $PATH
+
 npm i && npm run build
