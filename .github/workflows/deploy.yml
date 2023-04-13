@@ -1,7 +1,7 @@
 name: laravel-beanstalk-cd
 
 env:
-  "S3_BUCKET_NAME": "	elasticbeanstalk-ap-southeast-2-761950595990"
+  "S3_BUCKET_NAME": "elasticbeanstalk-ap-southeast-2-761950595990"
   "EBS_APPLICATION_NAME": "Duerr-NDT"
   "EBS_ENVIRONMENT_NAME": "Duerr-NDT-env-1"
   "AWS_REGION": "ap-southeast-2"
