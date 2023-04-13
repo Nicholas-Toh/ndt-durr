@@ -12,7 +12,10 @@
         "noEmit": true,
         "paths": {
             "@/*": [
-                "./resources/js/*"
+                "./resources/js/*",
+            ],
+            "ziggy": [
+                "./vendor/tightenco/ziggy/dist/vue"
             ]
         }
     },
