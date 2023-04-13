@@ -12,4 +12,6 @@ export NVM_DIR="$HOME/.nvm"
 # Install node
 nvm install 16
 
+nvm use 16
+
 npm i && npm run build
