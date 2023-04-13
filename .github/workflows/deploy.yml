@@ -1,7 +1,7 @@
 name: laravel-beanstalk-cd
 
 env:
-  "S3_BUCKET_NAME": "php-laravel-beanstalk"
+  "S3_BUCKET_NAME": "elasticbeanstalk-ap-southeast-2-761950595990"
   "EBS_APPLICATION_NAME": "Duerr-NDT"
   "EBS_ENVIRONMENT_NAME": "Duerr-NDT-env-1"
   "AWS_REGION": "ap-southeast-2"
@@ -23,9 +23,8 @@ jobs:
         run: zip -r ${{env.DEPLOY_PACKAGE_NAME}} ./ -x *.git*
       
       - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v2
         with:
-          node-version: ${{env.NODE_VERSION}}
           aws-access-key-id: ${{secrets.AWS_IAM_USER_ID}}
           aws-secret-access-key: ${{secrets.AWS_IAM_USER_SECRET}}
           aws-region: ${{env.AWS_REGION}}
