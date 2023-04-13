@@ -14,6 +14,6 @@ nvm install 16
 
 nvm use 16
 
-export PATH=$PATH:$(nvm ls 16)
+ln -sf  $(nvm which 16) /usr/bin/node
 
 npm i && npm run build
