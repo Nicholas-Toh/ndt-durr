@@ -12,7 +12,7 @@ export NVM_DIR="$HOME/.nvm"
 # Install node
 nvm install 16
 
-nvm use 16
+nvm alias default 16
 
 ln -sf  $(nvm which 16) /usr/bin/node
 
