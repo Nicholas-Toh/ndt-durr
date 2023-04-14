@@ -6,6 +6,8 @@
 # to some folders that should be writable, such as the storage/
 # or bootstrap/cache/, for example.
 
+cd /var/app/current
+
 chmod -R 777 storage/
 chmod -R 777 bootstrap/cache/
 
