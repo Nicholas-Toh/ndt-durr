@@ -1,5 +1,5 @@
 
-#!/bin/sh
+#!/bin/bash
 
 # Make Folders Writable
 
