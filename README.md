@@ -11,6 +11,7 @@ The CI part is handled by Github Actions, while the CD part is handled by AWS Be
 2. Have a Github account.
 
 ## Setting Up AWS Beanstalk
+
 AWS Beanstalk is a managed deployment service that helps you automatically provision AWS resources and deploy web applications rapidly. All you need to do is to specify which services you need in the environment such as RDS, VPC, load balancers, CloudWatch etc.
 
 > **Note**
@@ -74,6 +75,7 @@ AWS Beanstalk is a managed deployment service that helps you automatically provi
     - Click on **Submit** 
 
 ## Usage
+
 1. Store your IAM user's key and secret in the Actions secrets page as `AWS_IAM_USER_ID` and `AWS_IAM_USER_SECRET` respectively.
 2. In `.github/workflows/deploy.yml`, fill in your `S3_BUCKET_NAME`, `EBS_APPLICATION_NAME`, `EBS_ENVIRONMENT_NAME` and `AWS_REGION`.
 3. Push code into the repo to trigger the CI/CD pipeline which will run the tests and deploy the application for you.
