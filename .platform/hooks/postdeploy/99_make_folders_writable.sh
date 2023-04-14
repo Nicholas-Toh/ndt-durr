@@ -7,8 +7,8 @@
 # to some folders that should be writable, such as the storage/
 # or bootstrap/cache/, for example.
 
-sudo chmod -R 777 storage/
-sudo chmod -R 777 bootstrap/cache/
+chmod -R 777 storage/
+chmod -R 777 bootstrap/cache/
 
 # Storage Symlink Creation
 
