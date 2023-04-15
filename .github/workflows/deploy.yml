@@ -1,5 +1,13 @@
 name: test-and-deploy-app
 
+env:
+  "S3_BUCKET_NAME": "elasticbeanstalk-ap-southeast-2-761950595990"
+  "EBS_APPLICATION_NAME": "Duerr-NDT"
+  "EBS_ENVIRONMENT_NAME": "Duerr-NDT-env-1"
+  "AWS_REGION": "ap-southeast-2"
+  "DEPLOY_PACKAGE_NAME": "duerr-ndt-laravel-app-${{github.sha}}.zip"
+  "NODE_VERSION": 19.7
+
 # Test and deploy the app if tests succeed
 on:
   push:
