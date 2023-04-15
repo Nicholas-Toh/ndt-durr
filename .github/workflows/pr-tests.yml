@@ -1,8 +1,7 @@
-name: test-app
+name: test-pr
 
+# Test pull requests as they are created.
 on:
-  push:
-    branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
 
@@ -24,6 +23,8 @@ jobs:
       with:
         php-version: ${{ matrix.php }}
     - uses: actions/checkout@v3
+
+    # Install dependencies needed for test
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
