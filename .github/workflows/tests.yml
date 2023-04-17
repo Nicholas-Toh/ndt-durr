@@ -1,7 +1,9 @@
-name: test-pr
+name: test-app
 
 # Test pull requests as they are created.
 on:
+  push:
+    branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
 
